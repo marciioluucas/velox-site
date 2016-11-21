@@ -19,14 +19,14 @@
             <li><a href="#">Início</a></li>
             <li><a href="#planos">Planos</a></li>
             <li><a href="#contato">Contato</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#login-modal">Login</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
             <li><a href="#">Início</a></li>
             <li><a href="#planos">Planos</a></li>
             <li><a href="#contato">Contato</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#login-modal">Login</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -215,6 +215,33 @@
     </div>
 </footer>
 
+<!-- Modal Structure -->
+<div id="login-modal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Login de usuário</h4>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="login" type="text" class="validate">
+                <label for="login">Login</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="senha" type="password" class="validate">
+                <label for="senha">Senha</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <button type="submit" class="btn waves-effect waves-light" style="background-color: #3dc133">Enviar
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Fechar</a>
+    </div>
+</div>
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -224,6 +251,7 @@
 <script>
     $(document).ready(function () {
         $('.scrollspy').scrollSpy();
+        $('.modal').modal();
     });
 </script>
 </body>
