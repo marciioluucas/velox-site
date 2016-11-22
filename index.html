@@ -219,15 +219,17 @@
 <div id="login-modal" class="modal modal-fixed-footer">
     <div class="modal-content">
         <h4>Login de usuário</h4>
+        <form action="http://www.veloxmultimidia.com.br/../central/login.php?acao=senha" method="post"
+              name="frm_central" id="frm_central">
         <div class="row">
             <div class="input-field col s12">
-                <input id="login" type="text" class="validate">
+                <input id="login" name="login" type="text" class="validate">
                 <label for="login">Login</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="senha" type="password" class="validate">
+                <input id="senha" name="senha" type="password" class="validate" maxlength="32">
                 <label for="senha">Senha</label>
             </div>
         </div>
@@ -237,7 +239,9 @@
                 </button>
             </div>
         </div>
+        </form>
     </div>
+
     <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Fechar</a>
     </div>
