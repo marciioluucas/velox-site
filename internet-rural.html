@@ -13,7 +13,7 @@
 <body id="index" class="scrollspy">
 <nav class="white" role="navigation" style="position: fixed; z-index: 999">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo"><img style="width: 95px" src="velox.png"
+        <a id="logo-container" href="index.html" class="brand-logo"><img style="width: 95px" src="velox.png"
                                                                 alt="Velox logo"></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="index.html">Início</a></li>
@@ -154,6 +154,33 @@
         </div>
     </div>
 </footer>
+
+<!-- Modal Login huehue -->
+<div id="login-modal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Login de usuário</h4>
+        <form action="http://www.veloxmultimidia.com.br/../central/login.php?acao=senha" method="post"
+              name="frm_central" id="frm_central">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="login" name="login" type="text" class="validate">
+                    <label for="login">Login</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="senha" name="senha" type="password" class="validate" maxlength="32">
+                    <label for="senha">Senha</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <button type="submit" class="btn waves-effect waves-light" style="background-color: #3dc133">Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
