@@ -5580,7 +5580,7 @@ button.btn-floating {
 }
 
 .chips .chip.selected {
-  background-color: #26a69a;
+  background-color: #3dc133;
   color: #fff;
 }
 
@@ -6023,7 +6023,7 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field .prefix.active {
-  color: #26a69a;
+  color: #3dc133 !important;
 }
 
 .input-field .prefix ~ input,
