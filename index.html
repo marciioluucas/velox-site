@@ -268,10 +268,10 @@
     <div class="footer-copyright">
         <div class="container">
             <div class="row">
-                <div class="col l9 m7 s7">
+                <div class="col l9 m5 s5">
                     Made by <a class="brown-text text-lighten-3" href="http://github.com/marciioluucas">Luke Idea</a>
                 </div>
-                <div class="col l3 m5 s5" style="padding-top: 10px">
+                <div class="col l3 m7 s7" style="padding-top: 10px">
                     <img src="imgs/anatel.jpg" alt="Selo anatel">
                 </div>
             </div>
@@ -325,6 +325,7 @@
 
         if ($(window).width() <= 600) {
             $("#img-back-1").attr("src", "imgs/background1-2.jpg");
+            $("#img-back-3").attr("src", "imgs/background3-2.jpg");
 //            alert($(window).width());
         }
 
@@ -336,7 +337,6 @@
         }
     });
 
-    $(window).resize(function () {
         if ($(window).width() <= 600) {
             $("#img-back-1").attr("src", "imgs/background1-2.jpg");
             $("#img-back-3").attr("src", "imgs/background3-2.jpg");
@@ -346,7 +346,7 @@
             $("#img-back-3").attr("src", "imgs/background3.jpg");
             $(".parallax").parallax();
         }
-    });
+
 
 </script>
 </body>
