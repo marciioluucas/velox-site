@@ -50,7 +50,7 @@
 
         </div>
     </div>
-    <div class="parallax"><img src="imgs/background1.jpg" alt="Background 1"></div>
+    <div class="parallax"><img src="imgs/background1.jpg" id="img-back-1" alt="Background 1"></div>
 </div>
 
 <div class="container">
@@ -249,24 +249,32 @@
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">Velox provedor de internet</h5>
-                <p class="grey-text text-lighten-4">Telefone: (64)9278-4771</p>
+                <p class="grey-text text-lighten-4">Telefone para contato/suporte: (64)99278-4771</p>
                 <p class="grey-text text-lighten-4">E-mail: veloxmultimidia@gmail.com</p>
             </div>
 
             <div class="col l3 s12">
-                <h5 class="white-text">Redes sociais</h5>
+                <h5 class="white-text">Links úteis</h5>
                 <ul>
-                    <li><a class="white-text" href="#!">Facebook</a></li>
-                    <li><a class="white-text" href="#!">Instagram</a></li>
-                    <li><a class="white-text" href="#!">Twitter</a></li>
-                    <li><a class="white-text" href="#!">Linked In</a></li>
+                    <li><a class="white-text" href="https://www.facebook.com/VeloxProvedorDeInternet">Facebook</a></li>
+                    <li><a class="white-text" href="ato.pdf">Autorização Anatel</a></li>
+                    <li><a class="white-text" href="contratoscmsva.pdf">Contrato SCM SVA</a></li>
+
+
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer-copyright">
         <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="http://github.com/marciioluucas">Luke Idea</a>
+            <div class="row">
+                <div class="col l9 m7 s7">
+                    Made by <a class="brown-text text-lighten-3" href="http://github.com/marciioluucas">Luke Idea</a>
+                </div>
+                <div class="col l3 m5 s5" style="padding-top: 10px">
+                    <img src="imgs/anatel.jpg" alt="Selo anatel">
+                </div>
+            </div>
         </div>
     </div>
 </footer>
@@ -306,7 +314,7 @@
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 
@@ -314,6 +322,21 @@
     $(document).ready(function () {
         $('.scrollspy').scrollSpy();
         $('.modal').modal();
+
+        if ($(window).width() <= 600) {
+            $("#img-back-1").attr("src", "imgs/background1-2.jpg");
+//            alert($(window).width());
+        }
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() <= 600) {
+            $("#img-back-1").attr("src", "imgs/background1-2.jpg");
+//            alert($(window).width());
+        } else {
+            $("#img-back-1").attr("src", "imgs/background1.jpg");
+            $(".parallax").parallax();
+        }
     });
 
 </script>
